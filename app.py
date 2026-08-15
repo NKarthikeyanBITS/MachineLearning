@@ -63,7 +63,7 @@ if uploaded_file is not None:
         st.info(f"📊 Dataset Dimensions: **{df.shape[0]} rows** by **{df.shape[1]} columns**.")
         
         # Load Model File
-        filename = f"model/{selected_model_name.lower().replace(' ', '_')}_model.pkl"
+        filename = f"model/{selected_model_name.replace(' ', '_')}_model.pkl"
         try:
             with open(filename, "rb") as f:
                 model = pickle.load(f)
