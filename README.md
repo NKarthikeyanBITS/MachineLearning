@@ -53,11 +53,11 @@ Five core supervised machine learning classifiers were systematically trained on
 
 | ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Logistic Regression** | 0.9992 | 0.9280 | 0.8840 | 0.7530 | 0.8130 | 0.8150 |
-| **Decision Tree** | 0.9991 | 0.8900 | 0.7780 | 0.7810 | 0.7790 | 0.7790 |
-| **kNN (K-Nearest Neighbors)** | 0.9994 | 0.8970 | 0.9310 | 0.7950 | 0.8570 | 0.8600 |
-| **Naive Bayes (Gaussian)** | 0.9782 | 0.9150 | 0.0610 | 0.8360 | 0.1140 | 0.2220 |
-| **Random Forest (Ensemble)** | 0.9996 | 0.9380 | 0.9410 | 0.8220 | 0.8770 | 0.8800 |
+| **Logistic Regression** | 0.9868 | 0.9665 | 0.8000 | 0.2941 | 0.4301 | 0.4804 |
+| **Decision Tree** | 0.9898 | 0.8883 | 0.9655 | 0.4118 | 0.5773 | 0.6270 |
+| **kNN (K-Nearest Neighbors)** | 0.9830 | 0.9902 | 0.0000 | 0.0000 | 0.0000 | 0.0000 |
+| **Naive Bayes (Gaussian)** | 0.9117 | 0.8965 | 0.1220 | 0.6765 | 0.2067 | 0.2621 |
+| **Random Forest (Ensemble)** | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 1.0000 |
 
 *(Note: The scores above reflect baseline metrics obtained during testing on imbalanced validation splits. These values will be dynamically generated upon testing data processing inside your application.)*
 
