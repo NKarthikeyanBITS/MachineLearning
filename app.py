@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.metrics import (
     accuracy_score, roc_auc_score, precision_score, 
-    recall_score, f1_score, confusion_matrix, classification_report
+    recall_score, f1_score, mathews_corrcoef, confusion_matrix, classification_report
 )
 
 st.set_page_config(page_title="BITS ML Classification App", layout="wide")
@@ -80,13 +80,14 @@ if uploaded_file is not None:
         # --- c. Display of Evaluation Metrics ---
         st.subheader(f"📈 Evaluation Performance: {selected_model_name}")
         
-        col1, col2, col3, col4, col5 = st.columns(5)
+        col1, col2, col3, col4, col5, col6 = st.columns(6)
         col1.metric("Accuracy", f"{accuracy_score(y_test, y_pred):.4f}")
         col2.metric("AUC Score", f"{roc_auc_score(y_test, y_proba):.4f}")
         col3.metric("Precision", f"{precision_score(y_test, y_pred, zero_division=0):.4f}")
         col4.metric("Recall", f"{recall_score(y_test, y_pred, zero_division=0):.4f}")
         col5.metric("F1 Score", f"{f1_score(y_test, y_pred, zero_division=0):.4f}")
-        
+        col6.metric("MCC Score", f"{mathews_corrcoef(y_test, y_pred):.4f}")
+
         # --- d. Confusion Matrix and Classification Report ---
         st.write("---")
         layout_col1, layout_col2 = st.columns(2)
