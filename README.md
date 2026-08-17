@@ -72,7 +72,7 @@ Five core supervised machine learning classifiers were systematically trained on
 | **kNN** | Achieves notable precision scaling by tracking spatial distance clustering, but suffers from computational latency penalties as database scales up. |
 | **Naive Bayes** | High relative recall but exceptionally low precision. Serves as a poor standalone choice due to a massive influx of false positives caused by the strong feature independence assumption. |
 | **Random Forest (Ensemble)** | Outstanding stability across all evaluation dimensions. Effectively handles right-skewed data amounts and shows strong resilience to overfitting. |
-| **Overall Winner for your dataset?** | **Random Forest (Ensemble)**. It handles imbalanced data distributions natively, demonstrating the optimal balance between high precision (0.941) and high recall (0.822), maximizing the overall F1 and MCC metrics. |
+| **Overall Winner for your dataset?** | **Random Forest (Ensemble)**. It handles imbalanced data distributions natively, demonstrating the optimal balance between high precision (1.0000) and high recall (1.000), maximizing the overall F1 and MCC metrics. |
 
 ---
 
